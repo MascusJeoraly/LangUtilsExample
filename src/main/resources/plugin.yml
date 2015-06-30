@@ -1,0 +1,7 @@
+name: LangUtilsExample
+version: ${version}
+main: com.meowj.langutils.example.LangUtilsExample
+commands:
+   itemname:
+      description: Example command for Lang Utils
+      usage: /<command>
