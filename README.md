@@ -13,4 +13,4 @@ Screenshot:
 
 ![2015-07-01_00 21 42](https://cloud.githubusercontent.com/assets/5229241/8436019/acb40f0c-1f87-11e5-9414-acc596f343ff.png)
 
-This plugin uses Gradle for build automation. If you want to build the plugin yourself, please run `gradle build`. If you want to edit this plugin, you can run `gradle idea` or `gradle eclipse` to generate IDE project.
+This plugin uses Gradle for build automation. If you want to build the plugin yourself, please run `gradle build`. If you want to edit this plugin, run `gradle idea` or `gradle eclipse` to generate IDE project. If you don't have Gradle installed, use `gradlew` or `./gradlew` instead.
