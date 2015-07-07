@@ -11,6 +11,7 @@
 package com.meowj.langutils.example;
 
 import com.meowj.langutils.lang.LanguageHelper;
+import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
@@ -45,7 +46,8 @@ public class LangUtilsExample extends JavaPlugin {
             if (sender instanceof Player) {
                 Player player = (Player) sender;
                 ItemStack itemStack = player.getItemInHand();
-                player.sendMessage("You are holding " + LanguageHelper.getItemDisplayName(itemStack, player));
+                final long startTime = System.nanoTime();
+                player.sendMessage("You are holding " + ChatColor.GREEN + LanguageHelper.getItemDisplayName(itemStack, player) + ChatColor.RESET + ".(" + (System.nanoTime() - startTime) / 1000 + "μs)");
                 return true;
             } else
                 sender.sendMessage("Only player can use this command");
