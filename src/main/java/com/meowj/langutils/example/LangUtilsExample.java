@@ -15,6 +15,9 @@ import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
+import org.bukkit.event.EventHandler;
+import org.bukkit.event.Listener;
+import org.bukkit.event.player.PlayerInteractEntityEvent;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 
@@ -25,10 +28,11 @@ import java.util.logging.Level;
  *
  * @author Meow J
  */
-public class LangUtilsExample extends JavaPlugin {
+public class LangUtilsExample extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
         info("Language Utils Example has been enabled.");
+        getServer().getPluginManager().registerEvents(this, this);
     }
 
     @Override
@@ -53,5 +57,11 @@ public class LangUtilsExample extends JavaPlugin {
                 sender.sendMessage("Only player can use this command");
         }
         return false;
+    }
+
+    @EventHandler
+    public void onClickEntity(PlayerInteractEntityEvent event) {
+        final long startTime = System.nanoTime();
+        event.getPlayer().sendMessage("You are touching " + ChatColor.GREEN + LanguageHelper.getEntityDisplayName(event.getRightClicked(), event.getPlayer()) + ChatColor.RESET + ".(" + (System.nanoTime() - startTime) / 1000 + "μs)");
     }
 }
