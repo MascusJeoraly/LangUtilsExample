@@ -6,3 +6,6 @@ commands:
    itemname:
       description: Example command for Lang Utils
       usage: /<command>
+   showenchant:
+      description: Example command for Lang Utils
+      usage: /<command>
