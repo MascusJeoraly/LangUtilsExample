@@ -11,6 +11,8 @@
 package com.meowj.langutils.example;
 
 import com.meowj.langutils.lang.LanguageHelper;
+import com.meowj.langutils.lang.LanguageRegistry;
+import com.meowj.langutils.lang.convert.EnumLang;
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;
 import org.bukkit.command.CommandSender;
@@ -33,8 +35,11 @@ import java.util.logging.Level;
 public class LangUtilsExample extends JavaPlugin implements Listener {
     @Override
     public void onEnable() {
-        info("Language Utils Example has been enabled.");
+        // Replace the name of an item
+        LanguageRegistry.INSTANCE.registerEntry(EnumLang.EN_US, "item.swordGold.name", "Excalibur");
+
         getServer().getPluginManager().registerEvents(this, this);
+        info("Language Utils Example has been enabled.");
     }
 
     @Override
