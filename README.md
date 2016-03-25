@@ -1,9 +1,9 @@
 LangUtils Example Plugin
 =================
 
-[![Gitter](https://badges.gitter.im/Join%20Chat.svg)](https://gitter.im/MeowInnovation/LanguageUtils?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
+[![Gitter](https://badges.gitter.im/Join%20Chat.svg)]https://gitter.im/MascusJeoraly/LanguageUtils)
 
-An example plugin for [LangUtils](https://github.com/MeowInnovation/LanguageUtils "LangUtils").
+An example plugin for [LangUtils](https://github.com/MascusJeoraly/LangUtils "LangUtils").
 
 Status: [![Build Status](https://snap-ci.com/MeowInnovation/LangUtilsExample/branch/master/build_image)](https://snap-ci.com/MeowInnovation/LangUtilsExample/branch/master) [![Build Status](https://drone.io/github.com/MeowInnovation/LangUtilsExample/status.png)](https://drone.io/github.com/MeowInnovation/LangUtilsExample/latest)
 
