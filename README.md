@@ -7,7 +7,9 @@ An example plugin for [LangUtils](https://github.com/MascusJeoraly/LangUtils "La
 
 Status: [![Build Status](https://snap-ci.com/MascusJeoraly/LangUtilsExample/branch/master/build_image)](https://snap-ci.com/MascusJeoraly/LangUtilsExample/branch/master)
 
-This demo add a command `/itemname`, which basically tells you the name of the item you are holding. You can change your language to test multi-language compatibility.
+This demo add two commands `/itemname` and `/showenchant`. 
+- `/itemname` basically tells you the name of the item you are holding in the main hand. You can change your language to test multi-language compatibility.
+- `/showenchant` lists the enchantments of the item you are holding in the main hand.
 
 Screenshot:
 
