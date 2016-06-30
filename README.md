@@ -3,7 +3,7 @@ LangUtils Example Plugin
 
 [![Gitter](https://badges.gitter.im/MascusJeoraly/LanguageUtils.svg)](https://gitter.im/MascusJeoraly/LanguageUtils?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge)
 
-An example plugin for [LangUtils](https://github.com/MascusJeoraly/LangUtils "LangUtils").
+An example plugin for [LangUtils](https://github.com/MascusJeoraly/LanguageUtils "LangUtils").
 
 Status: [![Build Status](https://snap-ci.com/MascusJeoraly/LangUtilsExample/branch/master/build_image)](https://snap-ci.com/MascusJeoraly/LangUtilsExample/branch/master)
 
